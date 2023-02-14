@@ -1,2 +1,2 @@
 #!/bin/bash
-read -r water_base stir_base <<< "$(printf '%d\n' "0x$WATER" "0x$STIR")"; printf '%x\n' "$((water_base + stir_base))"
+printf "%o\n" $(( (5#$(echo $WATER | tr '[water]' '[01234]')) + (5#$(echo $STIR | tr '[stir.]' '[01234]')) )) | tr '[01234567]' '[behlnort]'
