@@ -1,2 +1,2 @@
 #!/bin/bash
-result=$(echo "ibase=water; $WATER + ibase=stir; $STIR; obase=bestchol;" | bc)
+read -r water_base stir_base <<< "$(printf '%d\n' "0x$WATER" "0x$STIR")"; printf '%x\n' "$((water_base + stir_base))"
