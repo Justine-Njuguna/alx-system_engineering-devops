@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script will display visitors grouped by IP and HTTP status code
+
+log_file="apache-access.log"
+if [ ! -f "$log_file" ]; then
+	echo "Error: $log_file does not exist."
+	exit 1
+fi
+
+awk '{print $1, $9}' "$log_file" | sort | uniq -c | sort -nr
