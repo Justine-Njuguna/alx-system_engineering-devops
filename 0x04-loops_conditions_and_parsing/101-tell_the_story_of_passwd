@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script reads /etc/passwd file and generates a story for each user.
+
+passwd_file="/etc/passwd"
+
+if [ ! -f "$passwd_file" ]; then
+	echo "Error: $passwd_file does not exist."
+	exit 1
+fi
+
+while IFS=: read -r username _ uid gid gecos home shell; do
+	IFS=',' read -r _ _ _ info _ <<< "$gecos"
+	echo "The user $username is part of the $gid gang, lives in $home and rides $shell."
+	echo "User ID's place is protected by the passcode $info, more info about the user here: $uid $info"
+	echo ""
+done < "$passwd_file"
+
