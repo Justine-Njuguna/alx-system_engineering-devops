@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# This file says why you no love me
+
+cleanup() {
+	rm -f "/var/run/myscript.pid"
+	exit 0
+}
+
+sigterm_handler() {
+	echo "I hate the kill command"
+}
+
+sigint_handler() {
+	echo "Y U no love me?!"
+}
+
+trap 'cleanup' SIGQUIT SIGTERM
+trap 'sigterm_handler' SIGTERM
+trap 'sigint_handler' SIGINT
+
+echo "$$" > "/var/run/myscript.pid"
+
+# Main
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
