@@ -4,7 +4,7 @@ regex_pattern = /School/
 
 argument = ARGV[0]
 
-if regex_pattern.match(argument)
-  puts argument
+if match = regex_pattern.match(argument)
+  puts match[0]
 else
 end
