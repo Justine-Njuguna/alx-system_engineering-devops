@@ -1,11 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2024-03-24T17:23:48.970Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="eMZKN6xg14aa3VUAK1Yk" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-24T17:38:48.742Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="UhKA-ySe_0nC1JjJ-K9h" version="24.1.0" type="github">
   <diagram name="Page-1" id="VVwuheIwz4UJ2k1E3ygO">
-    <mxGraphModel dx="1423" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1532" dy="866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-1" value="User&#39;s Devie" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="40" width="170" height="90" as="geometry" />
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="600" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;User&#39;s Device&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="130" width="400" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkPlCEyO7BM2ljIUboV7-1" target="tkPlCEyO7BM2ljIUboV7-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="545" y="460" as="sourcePoint" />
+            <mxPoint x="410" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-11" value="Http Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;spacing=3;fontSize=15;" vertex="1" connectable="0" parent="tkPlCEyO7BM2ljIUboV7-2">
+          <mxGeometry x="-0.0171" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;DNS Resolution&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="320" width="400" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Web Server(NGINX)&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="510" width="400" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Application Server&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="680" width="400" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkPlCEyO7BM2ljIUboV7-3" target="tkPlCEyO7BM2ljIUboV7-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="525" y="650" as="sourcePoint" />
+            <mxPoint x="575" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-13" value="&lt;span style=&quot;font-size: 15px; text-wrap: wrap; background-color: rgb(251, 251, 251);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Resolve www.foobar.com to Server IP&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontSize=15;" vertex="1" connectable="0" parent="tkPlCEyO7BM2ljIUboV7-7">
+          <mxGeometry x="0.168" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkPlCEyO7BM2ljIUboV7-4" target="tkPlCEyO7BM2ljIUboV7-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="525" y="650" as="sourcePoint" />
+            <mxPoint x="575" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-12" value="Serves Static Files" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontSize=15;" vertex="1" connectable="0" parent="tkPlCEyO7BM2ljIUboV7-8">
+          <mxGeometry x="-0.19" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkPlCEyO7BM2ljIUboV7-5" target="tkPlCEyO7BM2ljIUboV7-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="525" y="650" as="sourcePoint" />
+            <mxPoint x="425" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-14" value="Generate Dynamic Content" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontSize=15;" vertex="1" connectable="0" parent="tkPlCEyO7BM2ljIUboV7-9">
+          <mxGeometry x="-0.1438" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-15" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Database&lt;/font&gt;&lt;/b&gt;" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="358" y="860" width="135" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tkPlCEyO7BM2ljIUboV7-17" value="A simple Web Stack" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=5" vertex="1" parent="1">
+          <mxGeometry x="333.25" y="90" width="184.5" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
