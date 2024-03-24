@@ -1,75 +1,42 @@
-<mxfile host="app.diagrams.net" modified="2024-03-24T17:38:48.742Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="UhKA-ySe_0nC1JjJ-K9h" version="24.1.0" type="github">
-  <diagram name="Page-1" id="VVwuheIwz4UJ2k1E3ygO">
-    <mxGraphModel dx="1532" dy="866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="80" width="600" height="1000" as="geometry" />
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;User&#39;s Device&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="225" y="130" width="400" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkPlCEyO7BM2ljIUboV7-1" target="tkPlCEyO7BM2ljIUboV7-3">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="545" y="460" as="sourcePoint" />
-            <mxPoint x="410" y="360" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-11" value="Http Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;spacing=3;fontSize=15;" vertex="1" connectable="0" parent="tkPlCEyO7BM2ljIUboV7-2">
-          <mxGeometry x="-0.0171" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;DNS Resolution&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="225" y="320" width="400" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Web Server(NGINX)&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="225" y="510" width="400" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Application Server&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="225" y="680" width="400" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkPlCEyO7BM2ljIUboV7-3" target="tkPlCEyO7BM2ljIUboV7-4">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="525" y="650" as="sourcePoint" />
-            <mxPoint x="575" y="600" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-13" value="&lt;span style=&quot;font-size: 15px; text-wrap: wrap; background-color: rgb(251, 251, 251);&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Resolve www.foobar.com to Server IP&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontSize=15;" vertex="1" connectable="0" parent="tkPlCEyO7BM2ljIUboV7-7">
-          <mxGeometry x="0.168" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkPlCEyO7BM2ljIUboV7-4" target="tkPlCEyO7BM2ljIUboV7-5">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="525" y="650" as="sourcePoint" />
-            <mxPoint x="575" y="600" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-12" value="Serves Static Files" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontSize=15;" vertex="1" connectable="0" parent="tkPlCEyO7BM2ljIUboV7-8">
-          <mxGeometry x="-0.19" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tkPlCEyO7BM2ljIUboV7-5" target="tkPlCEyO7BM2ljIUboV7-15">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="525" y="650" as="sourcePoint" />
-            <mxPoint x="425" y="850" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-14" value="Generate Dynamic Content" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontSize=15;" vertex="1" connectable="0" parent="tkPlCEyO7BM2ljIUboV7-9">
-          <mxGeometry x="-0.1438" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-15" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Database&lt;/font&gt;&lt;/b&gt;" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="358" y="860" width="135" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="tkPlCEyO7BM2ljIUboV7-17" value="A simple Web Stack" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=5" vertex="1" parent="1">
-          <mxGeometry x="333.25" y="90" width="184.5" height="30" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+Link to the server whiteboard design
+
+====================================
+
+https://viewer.diagrams.net/index.html?tags=%7B%7D&target=blank&highlight=0000ff&edit=_blank&layers=1&nav=1&title=0-simple_web_stack#R7Vnfc9o4EP5rmGsfYCzLMuYxQJpm5prLHNNr%2ByhsYXS1LVcWAe6vv5UtB%2F8iNE2A5C5PSCtppd1v99PK9PAk3lxJmi4%2FiYBFPdsKNj087dk2ItiGHy3ZFhLPdQtBKHlgJu0EM%2F4PM0LLSFc8YFltohIiUjytC32RJMxXNRmVUqzr0xYiqu%2Ba0pC1BDOfRm3pFx6opbGCWDv5R8bDZbkzssxITMvJRpAtaSDWFRG%2B7OGJFEIVrXgzYZF2XumXYt2HPaP3B5MsUT%2BzQH2%2FjSaX2z%2BG40929Pf157n4a9hHBo07Gq2Mxea0alu6QIpVEjCtxerh8XrJFZul1NejawAdZEsVR9BD0DTqmFRss%2Feg6N58iBsmYqbkFqaUC0qPlSFjuuud%2F93Sy8uq761SSg3o4b3unV%2BgYVzzGDd1eMmNYN%2FxHBqhyg0vBAsBVlb95%2F5YiXKgn%2BUBfgET0DDdFMvMeKnoc8bkbxnMmLI7Dl42euHcher6diCuHOHMyNk2qSGHcBs6pwu60bGAsw%2BHN0uCC00U0PMjmmXcr%2Ful7kS24eqrbg%2BI6X0z83R7uqlMm27LTgKmVBbp7rfq2G5Z3ivXFUdlQYuhGniAOWIlfXY4gBWVIVMPzMPd%2BFbwIx3wlTLJIqr4Xf24XZiaHW4Fz5PFhA9x6uHjuI2wKMw0q6pU11DkoDqD4Kaiwg8tRXmI3Zv9BLpo88VHpVKQ%2FMl%2BrFim2kEIIP9O53B51mKPRjxMdGAC4EyCQKcnh9vpwgzEPAi0jrFkQC10nuvTsZNq23JrybhHpoZ%2FZmZHrTsDJuBJCD1cjha3LyIPsYG5aM1Wu%2ButGpX7U3EvdfStAVAiqsFmPy2qyiliscjYUXDGJ7wWpjezPH4yEa0UF8lrvhewfe57wTkhcl8Y6LRmTIIP391cXd98ff%2BawSPo3OCRE4J3kaYREG6RcQbE14ye21FNnxa94VtJVr08DpZkzllLsmb4kF8syciwoaj5Vjt2Sbb%2FroZCKPkpjiCGIyxIR9Uv0lUPmMSF1pz638M8Ovu%2BiIQsxmU4fwe02bPh6Fa18b6Tch7NXWQPd%2BXFAkAPJ1yvBwsh5lQOfBFrC0SFzazr28OUVnhpD6udoXw9fsE6fJBYrQFyvZdeoHpvXFst9w5yLXnj2ufg2vZXl5xq9EetmQIX%2BdD4wCMt%2BD8QifcgkcDLF41qeL34d%2B%2FojVaqD5GDtIL%2BG7ziNBR5TUXH5pX2q%2F2KJUxSpWuc6TahcU4tE8holryIj2zHJ5fRQXJxsFeDDb10ekHHeOC7%2B76rUXA6zZ70P0u2pKluBqArU0KykzztManj6rntpz3CpM0rqJm3z%2Fc%2FWftxr52f8TiNdI6aT2EKnkktJ%2BpH1a8mZpez6zdMNRG9RqKS5wAD40GDHkcdcHjOoAMQ%2FHg8oLv767hIvN0f8PjyXw%3D%3D#%7B%22pageId%22%3A%22dnoPinMBrXeCEamsKW5A%22%7D
+
+============================================================
+Explanation:
+=============================================================
+1. What is a server?
+	- A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. In our case, the server is hosting the web server, application server, and database.
+
+2. What is the role of the domain name?
+	- The domain name is the address where Internet users can access the website. In this case, www.foobar.com is the domain name. It’s used to find the server where your website is hosted.
+
+3. What type of DNS record www is in www.foobar.com?
+	- www in www.foobar.com is a type of DNS record known as a subdomain. It’s typically used to direct to the website hosted on the server.
+
+4. What is the role of the web server?
+	- The web server serves content to the web users. It accepts requests from clients and responds with the requested page, while also logging the user’s interactions.
+
+5. What is the role of the application server?
+	- This is where the logic of the application is executed. It interacts with the user’s requests, processes the data if needed, and calls the database when data persistence is necessary.
+
+6. What is the role of the database?
+	- Databases are used to organize and store data. It could be anything from a small amount of information to an entire inventory of items for an online store.
+
+7. What is the server using to communicate with the computer of the user requesting the website?
+	- The server communicates with the user’s computer via the HTTP/HTTPS protocol. When a user tries to access www.foobar.com, the DNS translates this to the IP address of the server (8.8.8.8), and then the server sends the requested page back to the user’s browser.
+
+
+=======================================================
+However, this setup has some potential issues.
+=======================================================
+
+1. SPOF - Single Point of Failure (SPOF) since everything is hosted on a single server, if that server goes down, the entire website goes down.
+
+2. Downtime when maintenance needed - If the server needs to be restarted for maintenance or to deploy new code, the website will be unavailable during that time.
+
+3. Cannot scale if too much incoming traffic - If the website receives a lot of traffic, a single server may not be able to handle the load. This setup doesn’t allow for easy scaling up.
+
+
