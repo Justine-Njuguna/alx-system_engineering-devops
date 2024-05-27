@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Script to create an RSA key pair
+
+# Key details
+KEY_NAME="school"
+KEY_BITS=4096
+KEY_PASSPHRASE="betty" # Prompt for passphrase instead of storing in script
+
+# Generate the key pair with passphrase prompt
+ssh-keygen -b $KEY_BITS -t rsa -C "your_email@example.com" -f $KEY_NAME -N "$KEY_PASSPHRASE"
+
+# Check for successful key generation
+if [ $? -eq 0 ]; then
+  echo "Key pair creation successful!"
+else
+  echo "Error creating key pair. Please check the logs."
+  exit 1
+fi
+
+# Display message with key fingerprint (optional)
+# You can uncomment these lines if you want to display the fingerprint
+# fingerprint=$(ssh-keygen -f $KEY_NAME.pub -q -f -)
+# echo "The key fingerprint is:"
+# echo "$fingerprint"
+
+exit 0
