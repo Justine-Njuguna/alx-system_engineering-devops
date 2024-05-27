@@ -13,8 +13,14 @@ server_ip="$2"
 username="$3"
 ssh_key="$4"
 
-# Transfer the file using scp with strict host checking disabled
-scp -o StrictHostKeyChecking=no -i "$ssh_key" "$file_path" "$username@$server_ip:~/""
+# Transfer the file using scp with strict host key checking disabled
+if [[ -z "$ssh_key" ]]; then
+  # No SSH key provided, use default behavior
+  scp -o StrictHostKeyChecking=no "$file_path" "$username@$server_ip:~/""
+else
+  # Use SSH key for authentication
+  scp -i "$ssh_key" -o StrictHostKeyChecking=no "$file_path" "$username@$server_ip:~/""
+fi
 
 # Check the exit code of scp command
 if [ $? -eq 0 ]; then
