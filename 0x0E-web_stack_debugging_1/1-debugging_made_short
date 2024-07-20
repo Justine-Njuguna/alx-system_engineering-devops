@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-
+# Short and sweet
+apt-get -y update
+apt-get install -y nginx
+sudo service nginx start
